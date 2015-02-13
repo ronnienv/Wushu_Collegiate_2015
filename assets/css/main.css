@@ -695,3 +695,62 @@ img {
   font-size: 30px;
   margin-bottom: 15px;
 }
+
+#documents{
+  background-color: #005DA4;
+}
+
+#documents h1{
+  color: #fff;
+}
+
+#documents .waiver{
+  color: #fff;
+  font-size: 16px;
+}
+
+#documents .competitor-class{
+  padding-left: 50px;
+}
+
+#venue {
+  width: 100%;
+  background:  url(../img/backgrounds/arc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+}
+
+#venue h1{
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#venue p{
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+#lodging h2{
+  font-weight: bold;
+  color: #005DA4;
+}
+
+#lodging p{
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+#lodging li{
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+#lodging .booking{
+  font-weight: bold;
+  color: #005DA4;
+}
