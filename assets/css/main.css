@@ -51,6 +51,16 @@ img {
 .lg {
   width: 260px;
 }
+.reg-small{
+  color: #ffffff;
+  border: 1px solid #FFF;
+  font-weight: 400;
+  border-radius: 4px;
+  background: #005DA4;
+  border: 1px solid #005DA4;
+  padding: 5px 10px;
+  margin: 10px;
+}
 .btn-border,
 .btn-common {
   color: #ffffff;
@@ -112,7 +122,6 @@ img {
 #navigation .logo {
   margin: 0 auto;
   padding: 30px;
-  width: 100px;
 }
 #navigation .nav li {
   border: 1px solid transparent;
@@ -152,6 +161,14 @@ img {
   bottom: 0px;
   content: "";
   display: block;
+}
+#header #logo {
+  height: 80px;
+  opacity: 0.8;
+}
+
+#header #logo:hover{
+  opacity: 1;
 }
 #header .top-header {
   margin-top: 50px;
@@ -244,7 +261,7 @@ img {
   transition: all 0.3s ease;
 }
 #header .banner .scroll a i:hover {
-  background: #005DA4;
+  background: #FDB813;
   color: #ffffff;
 }
 /* Header Section End */
@@ -371,80 +388,31 @@ img {
   opacity: 1;
 }
 /* Works Section End */
-/* Testimonial Section Start */
-#testimonial {
-  background: url(../img/backgrounds/bg.jpg);
+/* tournament Section Start */
+#tournament {
+  width: 100%;
+  background: url(../img/backgrounds/tournament.jpg);
   background-size: cover;
-  color: #ffffff;
-}
-#testimonial .section-title {
-  color: #ffffff;
-}
-#testimonial blockquote {
-  border-left: none;
-  margin: 0;
-}
-#testimonial .commant {
-  float: left;
-  background: rgba(54, 74, 86, 0.3);
-  margin: 0 90px 0 100px;
-}
-#testimonial .commant .claint {
-  width: 270px;
-  height: 270px;
-  margin-left: -15px;
+  background-repeat: no-repeat;
   position: relative;
-}
-#testimonial .commant .quote {
-  background: #ffffff;
-  width: 64px;
-  position: absolute;
-  top: 12%;
-  right: -67px;
-  height: 64px;
-  border-radius: 50%;
-  text-align: center;
-}
-#testimonial .commant .quote i {
-  font-size: 30px;
-  color: #005DA4;
-  line-height: 65px;
-}
-#testimonial .commant .info {
-  padding: 60px 60px  0px 60px;
-}
-#testimonial .commant .info p {
-  font-size: 16px;
   color: #ffffff;
-  font-weight: 400;
-  font-style: italic;
-  text-align: justify;
-  padding-bottom: 32px;
 }
-#testimonial .commant .info h4 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
+#tournament .section-title {
+  color: #ffffff;
 }
-#testimonial .commant .info h5 {
+
+#tournament .row{
+  color: #fff;  
+  font-size: 24px;
+}
+
+#tournament .instructions{
+  color: #fff;  
   font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  /*font-weight: bold;*/
 }
-#testimonial .carousel-indicators {
-  bottom: -50px;
-}
-#testimonial .carousel-indicators li {
-  border-radius: 0;
-  border: none;
-  background-color: #ffffff;
-}
-#testimonial .carousel-indicators .active {
-  background-color: #005DA4;
-  border: none;
-}
-/* Testimonial Section End */
+
+/* tournament Section End */
 /* Clients Section Start */
 #clients .section-title i {
   color: #005DA4;
@@ -596,17 +564,17 @@ img {
 #feedback .input-group .large {
   height: 120px;
 }
-#feedback .btn-green {
+#feedback .btn-gold {
   color: #ffffff;
   font-weight: 400;
-  background: #6c9c01;
+  background: #005DA4;
   font-size: 22px;
   width: 100%;
   border-radius: 0px;
   text-transform: uppercase;
   height: 60px;
 }
-#feedback .btn-green i {
+#feedback .btn-gold i {
   float: left;
   width: 74px;
   background: #005DA4;
@@ -702,6 +670,6 @@ img {
   text-decoration: none;
 }
 #footer a:hover {
-  color: #6c9c01;
+  color: #FDB813;
 }
 /* Footer Section End */
