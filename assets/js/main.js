@@ -43,7 +43,7 @@ jQuery(document).ready(function( $ ) {
         slideSpeed: 400,
         paginationSpeed: 800,
         autoPlay: true,
-        pagination : false,
+        pagination : true,
         items : 4,
         itemsCustom : false,
         itemsDesktop : [1199,4],
@@ -51,6 +51,7 @@ jQuery(document).ready(function( $ ) {
         itemsTablet: [768,2],
         itemsTabletSmall: false,
         itemsMobile : [479,1],
+
     });
        $('#menu').click(function(){
        $('#menu').not(this).removeClass("active");
