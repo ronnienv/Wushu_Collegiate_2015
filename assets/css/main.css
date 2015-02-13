@@ -39,7 +39,7 @@ img {
   text-align: left;
   font-size: 52px;
   font-weight: 400;
-  color: #454545;
+  color: #005DA4;
   margin: 0 10px;
   padding: 0;
   text-transform: uppercase;
@@ -50,6 +50,16 @@ img {
 }
 .lg {
   width: 260px;
+}
+.reg-small{
+  color: #ffffff;
+  border: 1px solid #FFF;
+  font-weight: 400;
+  border-radius: 4px;
+  background: #005DA4;
+  border: 1px solid #005DA4;
+  padding: 5px 10px;
+  margin: 10px;
 }
 .btn-border,
 .btn-common {
@@ -73,19 +83,19 @@ img {
   background: #ffffff;
 }
 .btn-common {
-  background: #82BC00;
-  border: 1px solid #82BC00;
+  background: #005DA4;
+  border: 1px solid #005DA4;
 }
 .btn-border:hover {
-  color: #82BC00;
+  color: #005DA4;
 }
 .btn-border:hover:after {
   height: 100%;
 }
 .btn-common:hover {
-  color: #82BC00;
-  background: #82BC00;
-  border: 1px solid #82BC00;
+  color: #005DA4;
+  background: #005DA4;
+  border: 1px solid #005DA4;
 }
 .btn-common:hover:after {
   height: 100%;
@@ -100,8 +110,8 @@ img {
 }
 /* Navbar  start */
 #navigation {
-  background: #82BC00;
-  border: 1px solid #82BC00;
+  background: #005DA4;
+  border: 1px solid #005DA4;
   color: #fff;
   padding-top: 50px;
   text-align: center;
@@ -112,7 +122,6 @@ img {
 #navigation .logo {
   margin: 0 auto;
   padding: 30px;
-  width: 100px;
 }
 #navigation .nav li {
   border: 1px solid transparent;
@@ -152,6 +161,14 @@ img {
   bottom: 0px;
   content: "";
   display: block;
+}
+#header #logo {
+  height: 80px;
+  opacity: 0.8;
+}
+
+#header #logo:hover{
+  opacity: 1;
 }
 #header .top-header {
   margin-top: 50px;
@@ -209,14 +226,14 @@ img {
 #header .top-header #menu:hover span,
 #header .top-header #menu:hover span:after,
 #header .top-header #menu:hover span:before {
-  background: #82BC00;
+  background: #005DA4;
 }
 
 #header .banner {
   margin: 50px;
 }
 #header .banner h1 {
-  color: #82BC00;
+  color: #FDB813;
   font-size: 42px;
   font-weight: 400;
   text-transform: uppercase;
@@ -225,13 +242,14 @@ img {
   color: #ffffff;
   font-size: 45px;
   margin: 32px 0px 50px;
+  text-transform: uppercase;
 }
 #header .banner .scroll {
   margin: 50px 0;
 }
 #header .banner .scroll a i {
   font-size: 48px;
-  color: #82BC00;
+  color: #005DA4;
   padding: 12px;
   width: 68px;
   height: 68px;
@@ -243,7 +261,7 @@ img {
   transition: all 0.3s ease;
 }
 #header .banner .scroll a i:hover {
-  background: #82BC00;
+  background: #FDB813;
   color: #ffffff;
 }
 /* Header Section End */
@@ -251,7 +269,7 @@ img {
 
 /* About Us Section Start */
 #aboutus {
-  background-color: #8FAAC5;
+  background-color: #005DA4;
 }
 
 #aboutus h1{
@@ -317,7 +335,7 @@ img {
   top: 24%;
 }
 #works .grid-right .browse-box .more a {
-  color: #82bc00;
+  color: #005DA4;
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
@@ -325,7 +343,7 @@ img {
 }
 #works .grid-right .browse-box .more a i {
   font-size: 50px;
-  color: #82bc00;
+  color: #005DA4;
   padding: 12px;
 }
 #works .large .overlay a {
@@ -363,90 +381,41 @@ img {
   background: #fff;
   border-radius: 50%;
   font-size: 24px;
-  color: #82bc00;
+  color: #005DA4;
 }
 #works .large:hover .overlay,
 #works .grid-box:hover .overlay {
   opacity: 1;
 }
 /* Works Section End */
-/* Testimonial Section Start */
-#testimonial {
-  background: url(../img/backgrounds/bg.jpg);
+/* tournament Section Start */
+#tournament {
+  width: 100%;
+  background: url(../img/backgrounds/tournament.jpg);
   background-size: cover;
-  color: #ffffff;
-}
-#testimonial .section-title {
-  color: #ffffff;
-}
-#testimonial blockquote {
-  border-left: none;
-  margin: 0;
-}
-#testimonial .commant {
-  float: left;
-  background: rgba(54, 74, 86, 0.3);
-  margin: 0 90px 0 100px;
-}
-#testimonial .commant .claint {
-  width: 270px;
-  height: 270px;
-  margin-left: -15px;
+  background-repeat: no-repeat;
   position: relative;
-}
-#testimonial .commant .quote {
-  background: #ffffff;
-  width: 64px;
-  position: absolute;
-  top: 12%;
-  right: -67px;
-  height: 64px;
-  border-radius: 50%;
-  text-align: center;
-}
-#testimonial .commant .quote i {
-  font-size: 30px;
-  color: #82bc00;
-  line-height: 65px;
-}
-#testimonial .commant .info {
-  padding: 60px 60px  0px 60px;
-}
-#testimonial .commant .info p {
-  font-size: 16px;
   color: #ffffff;
-  font-weight: 400;
-  font-style: italic;
-  text-align: justify;
-  padding-bottom: 32px;
 }
-#testimonial .commant .info h4 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
+#tournament .section-title {
+  color: #ffffff;
 }
-#testimonial .commant .info h5 {
+
+#tournament .row{
+  color: #fff;  
+  font-size: 24px;
+}
+
+#tournament .instructions{
+  color: #fff;  
   font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  /*font-weight: bold;*/
 }
-#testimonial .carousel-indicators {
-  bottom: -50px;
-}
-#testimonial .carousel-indicators li {
-  border-radius: 0;
-  border: none;
-  background-color: #ffffff;
-}
-#testimonial .carousel-indicators .active {
-  background-color: #82bc00;
-  border: none;
-}
-/* Testimonial Section End */
+
+/* tournament Section End */
 /* Clients Section Start */
 #clients .section-title i {
-  color: #82bc00;
+  color: #005DA4;
 }
 #clients #clients-carousel a img {
   opacity: 0.5;
@@ -502,7 +471,7 @@ img {
 }
 #skills .count-info h4 {
   font-size: 22px;
-  color: #82BC00;
+  color: #005DA4;
   text-transform: uppercase;
 }
 /* Skills Section End */
@@ -553,7 +522,7 @@ img {
   padding-bottom: 12px;
 }
 #blog .title:hover {
-  color: #82BC00;
+  color: #005DA4;
 }
 /* Blog Section End */
 /* Feedback Section Start */
@@ -570,7 +539,7 @@ img {
 #feedback .input-group .input-group-addon {
   border-radius: 0px;
   padding: 14px 26px;
-  background-color: #82bc00;
+  background-color: #005DA4;
   border: none;
   position: relative;
 }
@@ -595,20 +564,20 @@ img {
 #feedback .input-group .large {
   height: 120px;
 }
-#feedback .btn-green {
+#feedback .btn-gold {
   color: #ffffff;
   font-weight: 400;
-  background: #6c9c01;
+  background: #005DA4;
   font-size: 22px;
   width: 100%;
   border-radius: 0px;
   text-transform: uppercase;
   height: 60px;
 }
-#feedback .btn-green i {
+#feedback .btn-gold i {
   float: left;
   width: 74px;
-  background: #82BC00;
+  background: #005DA4;
   margin: -12px;
   line-height: 56px;
   height: 60px;
@@ -697,10 +666,10 @@ img {
   font-weight: 400;
 }
 #footer a {
-  color: #82bc00;
+  color: #005DA4;
   text-decoration: none;
 }
 #footer a:hover {
-  color: #6c9c01;
+  color: #FDB813;
 }
 /* Footer Section End */
