@@ -673,3 +673,25 @@ img {
   color: #FDB813;
 }
 /* Footer Section End */
+
+
+/* tournament page */
+#tournament .back a{
+  color: #fff;
+  font-size: 15px;
+}
+
+#deadline .deadline-info{
+  font-size: 20px;
+}
+
+#deadline .rules{
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+#deadline .other{
+  margin-top: 55px;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
