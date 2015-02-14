@@ -1,4 +1,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+	
+
   /* banner Start */
   #header .banner {
     margin: 0px;
@@ -42,7 +44,7 @@
   #testimonial .commant .info {
     padding: 25px 60px;
   }
-  /* Clients Start */
+  /* clients Start */
   #clients .item.large {
     padding: 18px;
   }
@@ -53,8 +55,8 @@
   .circliful {
     margin-left: 50px;
   }
-  /* Blog */
-  #blog .large {
+  /* newsfeed */
+  #newsfeed .large {
     right: 70px;
   }
   /* Footer Statt */
@@ -158,33 +160,38 @@
   #testimonial .commant .info h5 {
     font-size: 16px;
   }
-  /* Clients Start */
+  /* clients Start */
   .owl-carousel .owl-wrapper-outer {
     margin: 65px;
   }
-  /* Blog Start */
-  #blog .title {
+  /* newsfeed Start */
+  #newsfeed .title {
     font-size: 12px;
     padding: 0;
   }
-  #blog .blog-item .content {
+  #newsfeed .newsfeed-item .content {
     width: 170px;
     padding: 5px;
     height: 164px;
   }
-  #blog .blog-item .content p {
+  #newsfeed .newsfeed-item .content p {
     padding-top: 5px;
     font-size: 12px;
   }
-  /* Feedback Start */
-  #feedback .btn-green {
+  /* contact Start */
+  #contact .btn-green {
     width: 294px;
   }
-  #feedback .address {
+  #contact .address {
     margin-top: 50px;
   }
   /* Footer Start */
   .scroll-top {
     padding-bottom: 12px;
   }
+  
+
+
+
+
 }

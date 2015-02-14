@@ -14,6 +14,38 @@
   <!-- Responsive Style -->
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
   
+  <!-- jQuery -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- jQuery scripts -->           
+	
+	<script>
+	$(document).ready(function(){
+	    // grab the initial top offset of the navigation 
+		var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    	// our function that decides weather the navigation bar should have "fixed" css position or not.
+		var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+			 
+			// if we've scrolled more than the navigation, change its position to fixed to stick to top,
+			// otherwise change it back to relative
+			if (scroll_top > sticky_navigation_offset_top) { 
+				$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+			} else {
+				$('#sticky_navigation').css({ 'position': 'relative' }); 
+			}   
+		};
+		
+		 	// run our function on load
+			sticky_navigation();
+			 
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				 sticky_navigation();
+			});
+		});
+	 </script>
+  
   <!--Fonts-->
   <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css">
 
@@ -30,61 +62,62 @@
               <![endif]-->
 </head>
 <body>
-	 
   <!-- Header Section Start -->
   <div id="header">
-    <div class="container">
+    <div class=" container demo_top_wrapper">
       <div class="col-md-12 top-header">
-        <div class="logo-menu">
-          <div class="logo pull-left wow fadeInDown animated">
-            <a href="index.html"><img id="logo" src="assets/img/wushu_logo.png" alt="logo"></a>
-          </div> 
-          <div class="pull-right wow fadeInDown animated" >
-            <div id="menu" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-              <span>menu</span>
-            </div> 
-          </div> 
-        </div>
-        <div class="sidebar-nav">
-          <!-- navigation start -->
-          <div class="navmenu navmenu-default navmenu-fixed-right offcanvas" style="" id="navigation">
-            <a href="#header"><img class="logo" src="assets/img/wushu_logo.png" alt="logo"></a>
-            <ul class="nav navmenu-nav">
-              <li class="active"><a href="#blog">News</a></li>
-              <li><a href="#aboutus">About</a></li>
-              <li><a href="#works">MultiMedia</a></li>
-              <li><a href="#tournament">Tournament</a></li>
-              <li><a href="#clients">Collegiates</a></li>
-              <li><a href="#feedback">Contact Us</a></li>
-            </ul>
-          </div>
-          <!-- navigation End -->
-        </div>     
-      </div>
+            <div class="logo-menu">
+                  <div class="logo pull-left wow fadeInDown animated">
+                        <a href="index.html"><img id="logo" src="assets/img/wushu_logo.png" alt="logo"></a>
+                  </div> 
+                   
+            </div>
       <div class="row">
-        <div class="col-md-12">
-          <div class="banner text-center">
-            <h1 class="wow fadeInDown animated" id="title">Collegiate Wushu</h1>
-            <h2 class="wow fadeInDown animated" id="subtitle">19th Annual Collegiate Wushu Tournament<br>Saturday, April 11th, 2015</h2>
-            <p><a href="tournament.html" class="btn btn-border lg wow fadeInLeft animated" >Learn More </a></p>
-            <p> <a href="#" class="btn btn-common lg wow fadeInLeft animated" >Register Now</a></p>
-            <div class="scroll">
-              <a href="#blog"><i class="fa fa-angle-down wow fadeInUp animated" ></i></a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="col-md-12 top-header">
+                  <div class="banner text-center">
+                    	<h1 class="wow fadeInDown animated" id="title">Collegiate Wushu</h1>
+                    	<h2 class="wow fadeInDown animated" id="subtitle">19th Annual Collegiate Wushu Tournament<br>Saturday, April 11th, 2015</h2>
+                    	<p><a href="tournament.html" class="btn btn-border lg wow fadeInLeft animated" >Learn More </a></p>
+                    	<p> <a href="#" class="btn btn-common lg wow fadeInLeft animated" >Register Now</a></p>
+                  
+                  		<div class="scroll">
+                            <a href="#newsfeed"><i class="fa fa-angle-down wow fadeInUp animated" ></i></a>
+                        </div>
+                  
+                        <!-- Navigation Start -->   
+                        <div class="nav" id="sticky_navigation_wrapper">
+                            <div id="sticky_navigation">
+                                <ul>
+                                    <li><a href="#header"> HOME</a></li>
+                                    <li><a href="#newsfeed"> NEWSFEED</a></li>
+                                    <li><a href="#aboutus"> ABOUT</a></li>
+                                    <li><a href="#media"> MULTIMEDIA</a></li>
+                                    <li><a href="#tournament"> TOURNAMENT</a></li>
+                                    <li><a href="#clients"> clients</a></li>
+                                    <li><a href="#contact"> CONTACT</a></li>
+                                </ul>
+                             </div>
+                        </div>      
+                    </div>
+          			<!-- Navigation End -->
+                    
+                    
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
   <!-- Header Section End -->
 
-  <!-- Blog Section Start -->
-  <section id="blog">
+  <!-- NewsFeed Section Start -->
+  <section id="newsfeed">
     <div class="container">
       <div class="row">
-        <h1 class="section-title wow fadeInLeft animated">NEWSFEED </h1>
+        <h1 class="section-title wow fadeInLeft animated">Latest <span>News </span></h1>
+        
         <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-          <div class="blog-large wow fadeInLeft animated">
+          <div class="newsfeed-large wow fadeInLeft animated">
             <img src="assets/img/actionShots/02.jpg" alt="">
             <div class="large">
               <a class="title" href="#">19th Annual Tournament Date Announced! </a>
@@ -92,42 +125,33 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft animated">
-          <div class="blog-item">
+        
+        
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+          <div class="newsfeed-large wow fadeInLeft animated">
             <img src="assets/img/actionShots/03.jpg" alt="">
-            <div class="content">
-              <a class="title" href="#">2015 Collegiate Host</a>
-              <p>The University of California Irvine will host the 19th Collegiate Wushu Tournament in Spring 2015!</p>
+            <div class="large">
+              <a class="title" href="#">2015 Collegiate Host Selected!</a>
+              <p>The University of California Irvine will host the 19th Collegiate Wushu Tournament in Spring 2015! Zot zot!</p>
             </div>
           </div>
-          <div class="blog-item">
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+          <div class="newsfeed-large wow fadeInLeft animated">
             <img src="assets/img/actionShots/12.jpg" alt="">
-            <div class="content">
-              <a class="title" href="#">This is Photoshop's vers ion  of Lorem Ipsum. Pro in gravida </a>
-              <p>Nibh vel velit auc tor aliq uet. Aenean sollicitu din, lorem quis biben...</p>
+            <div class="large">
+              <a class="title" href="#">2015 Call to Host</a>
+              <p>To all collegiate wushu clubs, this is a call to host the Collegiates Wushu Tournament in 2015! Filler text lalalala</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft animated">
-          <div class="blog-item">
-            <img src="assets/img/actionShots/09.jpg" alt="">
-            <div class="content">
-              <a class="title" href="#">This is Photoshop's vers ion  of Lorem Ipsum. Pro in gravida </a>
-              <p>Nibh vel velit auc tor aliq uet. Aenean sollicitu din, lorem quis biben...</p>
-            </div>
-          </div>
-          <div class="blog-item">
-            <img src="assets/img/actionShots/04.jpg" alt="">
-            <div class="content">
-              <a class="title" href="#">This is Photoshop's vers ion  of Lorem Ipsum. Pro in gravida </a>
-              <p>Nibh vel velit auc tor aliq uet. Aenean sollicitu din, lorem quis biben...</p>
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
     </div>
   </section>
-  <!-- Blog Section Start -->
+  <!-- newsfeed Section Start -->
 
   <!-- About Us Section Start -->
   <section id="aboutus">
@@ -145,7 +169,7 @@
   <!-- About Us Section End -->
 
   <!-- Media Section Start -->
-  <section id="works">
+  <section id="media">
     <div class="container">
       <div class="row">
         	<h1 class="section-title wow fadeInLeft animated">Multi<span>MEDIA</span></h1>
@@ -315,11 +339,11 @@
       </div>
     </div>
   </section>
-  <!-- Clients Section End -->
+  <!-- clients Section End -->
 
 
-  <!-- Feedback Section Start -->
-  <section id="feedback">
+  <!-- Contact Section Start -->
+  <section id="contact">
     <div class="container">
       <div class="row">
         <h1 class="section-title wow fadeInLeft animated"><span>Contact Us</span></h1>
