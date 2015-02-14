@@ -146,7 +146,7 @@ img {
 /* Header Section Start */
 #header {
   width: 100%;
-  background: url(../img/backgrounds/wushuBackground.jpg);
+  background: url(../img/backgrounds/wushuBackgroundedit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -235,7 +235,7 @@ img {
 #header .banner h1 {
   color: #FDB813;
   font-size: 42px;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
 }
 #header .banner h2 {
@@ -408,7 +408,7 @@ img {
 
 #tournament .instructions{
   color: #fff;  
-  font-size: 18px;
+  font-size: 16px;
   /*font-weight: bold;*/
 }
 
@@ -527,11 +527,11 @@ img {
 /* newsfeed Section End */
 /* contact Section Start */
 #contact {
-  background: url(../img/backgrounds/imgfooter.jpg);
+  background: url(../img/backgrounds/uci.jpg);
   background-size: cover;
 }
 #contact .section-title {
-  color: #ffffff;
+  color: #FDB813;
 }
 #contact .input-group {
   padding-bottom: 20px;
@@ -593,6 +593,7 @@ img {
 }
 #contact .address h2 {
   font-size: 25px;
+  color:#FDB813;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0px;
@@ -653,10 +654,10 @@ img {
 /* contact Section End */
 /* Footer Section Start */
 #footer {
-  color: #ffffff;
+  color: #000;
   width: 100%;
-  background: #28363f;
-  border-top: 1px solid #ffffff;
+  background: #000000;
+  border-top: 1px solid #005DA4;
 }
 #footer .row {
   padding: 20px 0;
@@ -696,61 +697,55 @@ img {
   margin-bottom: 15px;
 }
 
-#documents{
-  background-color: #005DA4;
+/* New Navigation */
+
+#sticky_navigation_wrapper { 
+	width:100%; 
+	height:50px; 
+}
+#sticky_navigation { 
+	z-index: 500; 
+	position:relative;
+	width:100%; 
+	height:50px; 
+	padding-left: 5%;
+	background:#FFF; 
+	-moz-box-shadow: 0 0 5px #999; 
+	-webkit-box-shadow: 0 0 5px #999; 
+	box-shadow: 0 0 5px #999; 
 }
 
-#documents h1{
-  color: #fff;
+#sticky_navigation ul { 
+	list-style:none; 
+	margin:0; 
+	padding:5px; 
 }
 
-#documents .waiver{
-  color: #fff;
-  font-size: 16px;
+#sticky_navigation ul li { 
+	margin:0; 
+	padding:0; 
+	display:inline; 
 }
 
-#documents .competitor-class{
-  padding-left: 50px;
+#sticky_navigation ul li a { 
+	display:block; 
+	float:left; 
+	margin:0 0 0 5px; 
+	padding:0 0.75%; 
+	height:40px; 
+	line-height:40px; 
+	font-size:14px; 
+	font-family:Arial, serif; 
+	font-weight:bold; 
+	text-transform:uppercase;
+	color:#005DA4; 
+	background:#FFF; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px; 
+	border-radius:3px; 
 }
 
-#venue {
-  width: 100%;
-  background:  url(../img/backgrounds/arc.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  color: #ffffff;
-}
-
-#venue h1{
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#venue p{
-  font-size: 20px;
-  font-weight: 300;
-  padding-left: 15px;
-}
-
-#lodging h2{
-  font-weight: bold;
-  color: #005DA4;
-}
-
-#lodging p{
-  font-size: 20px;
-  font-weight: 300;
-  padding-left: 15px;
-}
-
-#lodging li{
-  font-size: 18px;
-  padding-left: 20px;
-}
-
-#lodging .booking{
-  font-weight: bold;
-  color: #005DA4;
+#sticky_navigation ul li a:hover, #sticky_navigation ul li a.selected { 
+	color:#005DA4; 
+	background:#FFF; 
 }
