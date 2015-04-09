@@ -898,3 +898,15 @@ img {
 	color:#005DA4; 
 	background:#FFF; 
 }
+
+.btn-blu {
+  width:100%;
+  color:#ffffff;
+  background:#005DA4;
+}
+
+.btn-yel{
+  width:100%;
+  color:#ffffff;
+  background:#FDB813;
+}

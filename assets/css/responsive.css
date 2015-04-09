@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
 	
 
   /* banner Start */
@@ -59,12 +59,70 @@
   #newsfeed .large {
     right: 70px;
   }
-  /* Footer Statt */
+  /* Footer Start */
   #footer p {
     font-size: 15px;
   }
+
 }
-@media (min-width: 320px) and (max-width: 480px) {
+
+
+@media (max-width: 767px) {
+
+  /* banner Start */
+  #header {
+    height: 350px;
+  }
+
+  #header #title{
+    font-size: 35px;
+  }
+
+  #header #subtitle{
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  #header .top-header {
+  margin-top: 30px;
+  }
+
+  #header-row{
+    padding: 5px;
+  }
+
+  #sticky_navigation_wrapper {
+    display: none;
+  }
+
+  #newsfeed {
+    display: none;
+  }
+
+  #aboutus {
+    display: none;
+  }
+
+  #media {
+    display: none;
+  }
+
+  #tournament {
+    display: none;
+  }
+
+  #clients {
+    display: none;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  #footer {
+    display: none;
+  }
+
   .section-title {
     font-size: 32px;
   }
