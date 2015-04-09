@@ -827,13 +827,32 @@ img {
   margin-left: 25%;
 }
 
+#scores .event-name {
+  text-align: center;
+  font-size: 22px;
+}
+
+#scores .level {
+  font-size: 18px;
+}
+
 #scores .row {
   padding-top: 50px;
 }
 
 #scores-border-top {
   background-color: #005DA4;
-  height: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  min-height: 25px;
+  text-align: center;
+}
+
+#scores-border-top h1 {
+  background-color: #005DA4;
+  margin: 0px;
+  padding: 45px;
 }
 
 #scores-border-bottom {
