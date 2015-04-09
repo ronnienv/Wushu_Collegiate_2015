@@ -247,9 +247,25 @@
   .scroll-top {
     padding-bottom: 12px;
   }
-  
+}
 
+@media (max-width: 1000px) {
 
+    html {
+      min-width: 550px;
+    }
 
+    #scores-header {
+      height: 520px;
+    }
 
+  #scores-header .events li{
+    font-size: 13px;
+    display: inline-block;
+    margin: 5px;
+  }
+  #scores-header .events {
+    padding-top: 5px;
+    text-align: center;
+  }
 }
