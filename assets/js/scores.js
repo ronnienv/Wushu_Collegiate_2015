@@ -276,8 +276,10 @@ var parseJSON = function (numContestants, data) {
 		// for every index of the json object make a new male contestant
 		var currentIndex = 0;
 		for(j = 0; j < content.length; j++) {
+
+			var semiColonLoc = content[j].indexOf(":");
 			//if there is no semi colon in the index, it's good
-			if(content[j].indexOf(":") === -1){
+			if( semiColonLoc === -1 || semiColonLoc != content[j].length - 1){
 				if(tempContestant[currentIndex-1] == undefined){
 					tempContestant[currentIndex-1] = "";
 				}
@@ -345,15 +347,16 @@ var appendScores = function (gender, buttonNum) {
 					// don't include the time
 					if (j != 1){
 						if (j+1 < contestants[i].length){
-							scoreString = scoreString + " " + contestants[i][j] + " - ";
+							// scoreString = scoreString + " " + contestants[i][j] + " - ";
 						}
 						// if you are at the last number, it is the average
 						else{
-							scoreString = scoreString + " <b> avg: " + contestants[i][j] + "</b>";
+							scoreString = scoreString + " Score Average: " + contestants[i][j];
 						}
 					}
 					else {
-						scoreString = scoreString + " time: " + contestants[i][j] + " - Scores: ";
+						scoreString = scoreString + " Time: " + contestants[i][j] + " - ";
+						// scoreString = scoreString + " time: " + contestants[i][j] + " - Scores: ";
 					}
 				}
 				
