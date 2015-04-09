@@ -1,6 +1,12 @@
 // link to see json urls of all sheet
 // https://spreadsheets.google.com/feeds/worksheets/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/private/full
 
+// find the 'sheet/tab key' of the event you want (which is located after the 'spreadsheet key' in the urls above) and insert it here
+//"https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/ou6mt73/INSERTSHEETKEY/values?alt=json"
+// this give you the json feed for that sheet
+
+// be sure to publish the page/sheet/doc to the web, otherwise you will not have permission to view and use the feed
+
 // list of all classes for an event
 // [Advanced, Intermediate, Beginner]
 // if order is different, it will be mentioned

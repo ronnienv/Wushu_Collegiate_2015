@@ -77,6 +77,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header-new.php');
   <!-- Header Section End -->
 
   <!-- NewsFeed Section Start -->
+  <section id="newsfeedbutton">
+    <button class="btn-blu">Show NewsFeed</button>
+  </section>
+
   <section id="newsfeed">
     <div class="container">
       <div class="row">
@@ -111,6 +115,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header-new.php');
   <!-- newsfeed Section Start -->
 
   <!-- About Us Section Start -->
+  <section id="aboutusbutton">
+    <button class="btn-yel">Show About Us</button>
+  </section>
   <section id="aboutus">
     <div class="container">
       <div class="row">
@@ -126,6 +133,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header-new.php');
   <!-- About Us Section End -->
 
   <!-- Media Section Start -->
+  <section id="mediabutton">
+    <button class="btn-blu">Show Media</button>
+  </section>
+
   <section id="media">
     <div class="container">
       <div class="row">
@@ -176,6 +187,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header-new.php');
   <!-- Media Section End -->
 
   <!-- Tournament Section Start -->
+  <section id="tournamentbutton">
+    <button class="btn-yel">Show Tournament Info</button>
+  </section>
+
   <section id="tournament">
     <div class="container">
       <div class="row">
@@ -300,6 +315,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header-new.php');
 
 
   <!-- Contact Section Start -->
+  <section id="contactbutton">
+    <button class="btn-blu">Show Contanct Info</button>
+  </section>
+  
   <section id="contact">
     <div class="container">
       <div class="row">
