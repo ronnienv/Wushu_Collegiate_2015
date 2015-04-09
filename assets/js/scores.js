@@ -23,7 +23,7 @@ var broadswordMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOzt
 var broadswordFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/orjuvwq/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/ou3jh5z/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/oe7m1uw/public/values?alt=json"];
 
 ////// Chang Quan /////////
-var changQuanMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o56zo39/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/om0izj8/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o52uj0h/public/values?alt=json"];
+var changQuanMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o56zo39/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/oqnee8r/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o52uj0h/public/values?alt=json"];
 var changQuanFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/odmwbu6/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/om0izj8/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o50yv1d/public/values?alt=json"];
 
 ////// Internal Open Fist /////////
@@ -351,6 +351,9 @@ var appendScores = function (gender, buttonNum) {
 						else{
 							scoreString = scoreString + " <b> avg: " + contestants[i][j] + "</b>";
 						}
+					}
+					else {
+						scoreString = scoreString + " time: " + contestants[i][j] + " - Scores: ";
 					}
 				}
 				
