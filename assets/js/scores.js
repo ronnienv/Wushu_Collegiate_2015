@@ -49,8 +49,8 @@ var nanQuanFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztu
 ////// Open Barehand /////////
 // A - I
 var openBarehandMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/osfo1cv/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o4j4tk5/public/values?alt=json"];
-// 
-var openBarehandFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/oidjv1b/public/values?alt=json"];
+// A - I 
+var openBarehandFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/oidjv1b/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/oorog1y/public/values?alt=json"];
 
 ////// Open Chen /////////
 // A 
@@ -102,13 +102,13 @@ var taijiWeaponFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66J
 ////// Traditional Long Weapon /////////
 // A
 var traLongWeaponMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o46vn8m/public/values?alt=json"];
-// I 
-var traLongWeaponFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o4ksuqj/public/values?alt=json"];
+// A - I 
+var traLongWeaponFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o4ksuqj/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o7vwo64/public/values?alt=json"];
 
 ////// Traditional Open Barehand /////////
 var traOpenBarehandMale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o439kjy/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/ox22a3z/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o5bixha/public/values?alt=json"];
-// A - B
-var traOpenBarehandFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/of5c0lg/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/odzaaoc/public/values?alt=json"];
+// A - I - B  
+var traOpenBarehandFemale = ["https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/of5c0lg/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/odzaaoc/public/values?alt=json", "https://spreadsheets.google.com/feeds/list/1qtzqblx66JOztuDTtHLGnpx7jOAeefii29MsRL6GByI/o9dc5aj/public/values?alt=json"];
 
 ////// Traditional Short Weapon /////////
 // A - I 
@@ -338,37 +338,41 @@ var appendScores = function (gender, buttonNum) {
 			level = level[1];
 			level = level.replace(/,/g, '');
 
-			$(mainClass).append("<div class='col-sm-3 col-xs-3'></div><div class='level col-sm-9 col-xs-9'>" + level + "</div>")
+			
 
 			numContestants = data.feed.entry.length;
 			contestants = parseJSON(numContestants, data);
 
-			// append the entries to the scores page
-			$(mainClass).append("<div class='col-sm-3 col-xs-3'></div><div class='" + genderCol + level + " col-sm-9 col-xs-9'></div>")
-			for (i = 0; i < contestants.length; i++){
-				var scoreString = "<div><b>" + contestants[i][0] + "</b>:";
+			if(contestants.length != 0){
+				$(mainClass).append("<div class='col-sm-3 col-xs-3'></div><div class='level col-sm-9 col-xs-9'>" + level + "</div>")
 
-				// adds the scores onto the string that will be appended
-				for (j = 1; j < contestants[i].length; j++){
-					// don't include the time
-					if (j != 1){
-						if (j+1 < contestants[i].length){
-							// scoreString = scoreString + " " + contestants[i][j] + " - ";
+				// append the entries to the scores page
+				$(mainClass).append("<div class='col-sm-3 col-xs-3'></div><div class='" + genderCol + level + " col-sm-9 col-xs-9'></div>")
+				for (i = 0; i < contestants.length; i++){
+					var scoreString = "<div><b>" + contestants[i][0] + "</b>:";
+
+					// adds the scores onto the string that will be appended
+					for (j = 1; j < contestants[i].length; j++){
+						// don't include the time
+						if (j != 1){
+							if (j+1 < contestants[i].length){
+								// scoreString = scoreString + " " + contestants[i][j] + " - ";
+							}
+							// if you are at the last number, it is the average
+							else{
+								scoreString = scoreString + " Score Average: " + contestants[i][j];
+							}
 						}
-						// if you are at the last number, it is the average
-						else{
-							scoreString = scoreString + " Score Average: " + contestants[i][j];
+						else {
+							scoreString = scoreString + " Time: " + contestants[i][j] + " - ";
+							// scoreString = scoreString + " time: " + contestants[i][j] + " - Scores: ";
 						}
 					}
-					else {
-						scoreString = scoreString + " Time: " + contestants[i][j] + " - ";
-						// scoreString = scoreString + " time: " + contestants[i][j] + " - Scores: ";
-					}
+					
+					scoreString = scoreString + "</div>";
+					var levelClass = mainClass + " ." + genderCol + level;
+					$(levelClass).append(scoreString);
 				}
-				
-				scoreString = scoreString + "</div>";
-				var levelClass = mainClass + " ." + genderCol + level;
-				$(levelClass).append(scoreString);
 			}
 			$(levelClass).append("<br>");
         });
