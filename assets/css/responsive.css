@@ -67,7 +67,11 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
+
+  #html{
+    min-width: 800px;
+  }
 
   /* banner Start */
   #header {
@@ -99,27 +103,12 @@
     display: none;
   }
 
-  #aboutus {
-    display: none;
-  }
 
   #media {
     display: none;
   }
 
-  #tournament {
-    display: none;
-  }
-
   #clients {
-    display: none;
-  }
-
-  #contact {
-    display: none;
-  }
-
-  #footer {
     display: none;
   }
 
